@@ -13,7 +13,7 @@ api=Api(app)
 
 def log_transform(x):
     return np.log(x+1)
-model = pickle.load( open( "model.p", "rb" ) )
+model = pickle.load( open( "model.pickle", "rb" ) )
     
     
 class Scoring(Resource):
@@ -24,24 +24,13 @@ class Scoring(Resource):
         res=model.predict(df)
         print(df)
         return res.tolist()
-    
-    
-# class Predict(Resource):
-#     def post(self):
-#         json.data=request.get_json()
-#         df=pd.DataFrame(json_data.values(),
-#                         index=json_data.keys()).transpose()
-#         result=model.predict(df)
-#         return result.tolist()
-    
-    
+     
     
 api.add_resource(Scoring, '/scoring')
-# api.add_resource(Predict, '/predict')
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5555)
 
 
 
