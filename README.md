@@ -1,7 +1,6 @@
 # Mini-project IV
 
 
-
 ## Project/Goals
 The goal of this project is to build a machine learning model to predict the loan eligibility of applicants based on their Gender, Marital Staus, Education background, Credit Card History, Number of Dependents, Income, Loan Amount, and Term.  
 
