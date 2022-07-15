@@ -1,27 +1,35 @@
 # Mini-project IV
 
-### [Assignment](assignment.md)
+
 
 ## Project/Goals
-(fill in your description and goals here)
+The goal of this project is to build a machine learning model to predict the loan eligibility of applicants based on their Gender, Marital Staus, Education background, Credit Card History, Number of Dependents, Income, Loan Amount, and Term.  
+
 
 ## Hypothesis
-(fill in your hypothesis about which subset of applicants will be most likely to have their loan approved, and why. Give some examples of how you will test this hypothesis)
+
+1. Applicants having a good credit history are likely get approval.
+2. Applicants with higher applicant and co-applicant incomes
+3. Applicants with higher education level
 
 ## EDA 
-(fill in what you discovered in your exploration of the dataset)
 
 
 ## Process
-(fill in what you did during EDA, cleaning, feature engineering, modeling, deployment, testing)
-### (your step 1)
-### (your step 2)
+- Data Preparation
+- Feature Engineering
+- Supervised Learning
+- Pipelines
+- Model Persistance
+- Flask - building an API
+- Deployment to Cloud (AWS)
+
 
 ## Results/Demo
-(fill in your model's performance, details about the API you created, and (optional) a link to an live demo)
-
-## Challanges 
-(discuss challenges you faced in the project)
+I used RandomForestClassifier. 
+The accuracy score is 79% using basemodel.
+After gridSearch, the score goes up to 81.9%
 
 ## Future Goals
-(what would you do if you had more time? are there any potential issues/biases with your model/use case?)
+1. The dataset is highly imbalanced. I could use oversamling technique to increase the model accuracy.
+2. There are more hidden relationship among the features.
